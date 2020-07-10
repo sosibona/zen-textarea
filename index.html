@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog==" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
   <title>Zen Textarea</title>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <h1 class="title">Zen Textarea</h1>
+    <form action="">
+      <label for="comment">What on your mind?</label>
+      <div class="box">
+        <input type="checkbox" id="toggle">
+        <div class="comment-field">
+          <textarea name="comment" id="comment" placeholder="Leave a comment"></textarea>
+          <label for="toggle" class="expand"><i class="fas fa-expand icon"></i>Expand</label>
+          <label for="toggle" class="shrink"><i class="fas fa-compress-arrows-alt icon"></i>Shrink</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit comment</button>
+    </form>
+  </div>
   <script src="./scripts/index.js" type="module"></script>
 </body>
 </html>
